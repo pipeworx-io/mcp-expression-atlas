@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/expression-atlas",
   "title": "Expression Atlas",
   "description": "EBI Expression Atlas MCP.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/expression-atlas",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-expression-atlas",
