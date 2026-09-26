@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-expression-atlas",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "EBI Expression Atlas MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-57f93330dcd75ed585a031091706ed42e1217c374221732eb45495b27d2e58b4",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-604af7286e8d8c95b5780627351c892e7d83248aa52a1ed9258e8a7655c4d26f",
+    "sourceCommit": "91681e9a4a137fa0051d58e32f38c64b6334af5c"
   }
 }
