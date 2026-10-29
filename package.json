@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-expression-atlas",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "EBI Expression Atlas MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-expression-atlas": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "expression-atlas"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-expression-atlas.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/expression-atlas",
   "pipeworx": {
-    "sourceHash": "v1-3d33cacc4944e9e02fa6a07b29f1767706f0d7d0dbaf6e1c903fafc8e2ef1d76",
-    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
+    "mode": "gateway",
+    "slug": "expression-atlas",
+    "gatewaySlug": "expression-atlas",
+    "sourceHash": "v1-4cf35a81c56b2d16f02c88a00e26e46a89070a0ee50091222a4b257c862c7646",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }

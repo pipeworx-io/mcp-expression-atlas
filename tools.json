@@ -1,0 +1,43 @@
+[
+  {
+    "name": "search_experiments",
+    "description": "Search EBI Expression Atlas — ~4,500 curated gene/protein expression experiments (baseline & differential) across species, tissues, and conditions. Filter by keyword (matches description/experimental factors), species (e.g. \"Homo sapiens\", \"Mus musculus\"), and/or type (\"Baseline\" or \"Differential\"). Returns accession, description, species, type, assay count, and factors. Keyless. Complements UniProt/Ensembl.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Keyword matched (case-insensitive) against experiment description OR any experimental factor, e.g. \"liver\", \"stress\", \"cancer\"."
+        },
+        "species": {
+          "type": "string",
+          "description": "Species substring (case-insensitive), e.g. \"Homo sapiens\", \"Mus musculus\", \"Arabidopsis thaliana\"."
+        },
+        "type": {
+          "type": "string",
+          "description": "Experiment type: \"Baseline\" or \"Differential\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results (default 25, max 100)."
+        }
+      }
+    }
+  },
+  {
+    "name": "get_experiment",
+    "description": "Get metadata for a single EBI Expression Atlas experiment by accession (e.g. \"E-MTAB-4045\"). Returns accession, description, species, type, assay count, and experimental factors.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "accession": {
+          "type": "string",
+          "description": "Experiment accession, e.g. \"E-MTAB-4045\", \"E-GEOD-61857\"."
+        }
+      },
+      "required": [
+        "accession"
+      ]
+    }
+  }
+]
