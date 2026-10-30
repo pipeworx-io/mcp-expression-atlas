@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-expression-atlas",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "EBI Expression Atlas MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -28,6 +28,6 @@
     "slug": "expression-atlas",
     "gatewaySlug": "expression-atlas",
     "sourceHash": "v1-4cf35a81c56b2d16f02c88a00e26e46a89070a0ee50091222a4b257c862c7646",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceCommit": "06a6b405041923c5ddf2ac2436e7c049e635f464"
   }
 }
